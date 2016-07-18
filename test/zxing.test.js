@@ -56,7 +56,7 @@ describe('ZXing', function(){
         it('should find QR Code', function(){
             this.zxing.image = this.barcode4;
             var code = this.zxing.findCode();
-            code.type.should.equal('QR');
+            code.type.should.equal('QR_CODE');
         })
     })
     describe('#findCode() with tryHarder', function(){
